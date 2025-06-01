@@ -20,8 +20,7 @@ function mostrarCaminho() {
   }
 }
 
-/*SCRIPT de Digitação */
-
+/* SCRIPT de Digitação */
 const frases = [
   "Corte com estilo e precisão",
   "A melhor experiência da sua vida",
@@ -54,3 +53,58 @@ function apagar() {
 }
 
 digitar();
+
+/* Carrossel de Imagens */
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  slides.forEach((slide) => slide.classList.add("hidden"));
+  dots.forEach((dot) => dot.classList.remove("opacity-100"));
+  dots.forEach((dot) => dot.classList.add("opacity-50"));
+
+  slides[slideIndex - 1].classList.remove("hidden");
+  dots[slideIndex - 1].classList.remove("opacity-50");
+  dots[slideIndex - 1].classList.add("opacity-100");
+}
+
+/* Ida ao Topo */
+const scrollTopButton = document.getElementById("scrollTopButton");
+const progressBar = document.getElementById("progress-bar");
+
+window.addEventListener("scroll", () => {
+  const halfway = document.body.scrollHeight / 2;
+  const currentScroll = window.scrollY + window.innerHeight;
+
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+
+  // Previne divisão por zero caso a altura do documento seja igual à altura da janela
+  const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+  progressBar.style.width = `${scrollPercent}%`;
+
+  if (currentScroll >= halfway) {
+    scrollTopButton.classList.remove("hidden");
+  } else {
+    scrollTopButton.classList.add("hidden");
+  }
+});
