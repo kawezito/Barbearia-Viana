@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbearia Viana - A Melhor da Região</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/vw-libras.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+
+  <body class="bg-zinc-900 text-white">
+    <!-- HERO -->
+    <section
+      class="relative flex flex-col md:flex-row items-center justify-between min-h-screen bg-black text-white overflow-hidden"
+    >
+      <!-- Imagem -->
+      <div
+        class="relative z-10 w-full md:w-1/2 h-[60vh] md:h-[100vh] overflow-hidden"
+        style="
+          -webkit-mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1) 50%,
+            rgba(0, 0, 0, 0)
+          );
+        "
+      >
+        <img
+          src="img/barbeiro.png"
+          alt="Barbeiro em ação"
+          class="w-full h-full object-cover scale-105 hover:scale-110 transition duration-1000 ease-in-out"
+        />
+      </div>
+
+      <!-- Conteúdo -->
+      <div
+        class="relative z-20 w-full md:w-1/2 max-w-xl px-6 py-10 flex flex-col justify-center text-center md:text-left bg-gradient-to-l from-black/80 via-black/60 to-transparent"
+        style="height: 100vh"
+      >
+        <h1
+          class="text-5xl md:text-6xl font-extrabold tracking-wide mb-4 text-white transition hover:drop-shadow-[0_0_15px_rgba(255,115,0,0.9)]"
+        >
+          BARBEARIA <span class="text-orange-500">VIANA®</span>
+        </h1>
+
+        <p
+          id="slogan"
+          class="text-orange-400 text-lg md:text-xl mb-4 italic h-6 animate-pulse"
+        ></p>
+
+        <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+          Transformamos seu visual com cortes precisos e atendimento de
+          primeira.
+        </p>
+
+        <!-- Botões -->
+        <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
+          <button
+            class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-xl shadow-md transition duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
+          >
+            Ver mais
+          </button>
+          <button
+            class="bg-white text-orange-600 hover:bg-orange-50 border border-orange-500 font-semibold py-3 px-8 rounded-xl shadow-sm transition duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
+          >
+            Reservar
+          </button>
+          <a
+            href="https://wa.me/seunumerodowhatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-3 px-8 rounded-xl shadow-sm transition duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300"
+          >
+            <i class="fab fa-whatsapp mr-2 text-lg"></i>
+            <span class="px-4">WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Diferenciais -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-500 mt-6 text-base"
+        >
+          <div class="flex items-center gap-3">
+            <i class="fas fa-scissors text-orange-500 text-xl"></i>
+            <span class="px-4">Cortes modernos e clássicos</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-chair text-orange-500 text-xl"></i>
+            <span class="px-4">Conforto e ambiente climatizado</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-user text-orange-500 text-xl"></i>
+            <span class="px-4">Atendimento personalizado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+      <!-- Sobre nós -->
+      <section id="sobre-nos" class="text-center">
+        <h2
+          class="text-4xl text-orange-500 font-extrabold mb-6 tracking-wider drop-shadow-md uppercase"
+        >
+          Sobre a Barbearia
+        </h2>
+        <p class="text-lg leading-relaxed text-gray-300 max-w-3xl mx-auto">
+          Fundada em 2020, a Barbearia Viana® oferece cortes modernos, barba bem
+          feita e um ambiente acolhedor. Aqui, tradição e estilo se encontram
+          com um toque contemporâneo.
+        </p>
+      </section>
+      <!-- Seção vídeo equipamentos -->
+      <section
+        class="relative text-white py-12 px-4 flex flex-col items-center"
+      >
+        <h2 class="text-3xl font-bold mb-6 text-orange-500">
+          Equipamentos Utilizados
+        </h2>
+
+        <div
+          class="w-full max-w-[900px] rounded-xl overflow-hidden shadow-lg border-4 border-orange-500"
+          style="height: 360px"
+        >
+          <video
+            src="./video/video_comercial.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="w-full h-full object-cover"
+            aria-label="Vídeo mostrando os equipamentos utilizados no corte"
+            preload="auto"
+            controlslist="nodownload nofullscreen noremoteplayback"
+            disablepictureinpicture
+          ></video>
+        </div>
+        <p class="mt-6 max-w-3xl text-center text-gray-300 text-lg px-4">
+          Conheça os equipamentos modernos e de alta qualidade que utilizamos
+          para garantir cortes precisos e conforto para você.
+        </p>
+      </section>
+
+      <!-- Serviços -->
+      <section id="servicos" class="text-center">
+        <h2
+          class="text-4xl text-orange-500 font-extrabold mb-10 tracking-wider drop-shadow-md uppercase"
+        >
+          Nossos Serviços
+        </h2>
+        <div class="grid gap-8 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
+          <div
+            class="bg-zinc-800 border border-orange-400 rounded-2xl p-8 shadow-xl hover:shadow-orange-500/20 transition duration-300"
+          >
+            <h3 class="text-xl text-white font-bold mb-4">Corte Masculino</h3>
+            <p class="text-gray-400">
+              Clássico ou moderno, com atenção aos detalhes.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-800 border border-orange-400 rounded-2xl p-8 shadow-xl hover:shadow-orange-500/20 transition duration-300"
+          >
+            <h3 class="text-xl text-white font-bold mb-4">Barba</h3>
+            <p class="text-gray-400">
+              Toalha quente, navalha afiada e cuidado profissional.
+            </p>
+          </div>
+          <div
+            class="bg-zinc-800 border border-orange-400 rounded-2xl p-8 shadow-xl hover:shadow-orange-500/20 transition duration-300"
+          >
+            <h3 class="text-xl text-white font-bold mb-4">Combo</h3>
+            <p class="text-gray-400">
+              Corte + Barba com um valor especial. Estilo completo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria -->
+      <section id="galeria" class="text-center px-6">
+        <h2
+          class="text-4xl text-orange-500 font-extrabold mb-12 tracking-wider drop-shadow-md uppercase"
+        >
+          Galeria
+        </h2>
+        <div
+          class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-fr"
+        >
+          <div
+            class="overflow-hidden rounded-xl shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="img/corte-de-cabelo-1.png"
+              alt="Corte 1"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="overflow-hidden rounded-xl shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="img/corte-de-cabelo-2.png"
+              alt="Corte 2"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="overflow-hidden rounded-xl shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="img/corte-de-cabelo-3.png"
+              alt="Corte 3"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section id="depoimentos" class="text-center">
+        <h2
+          class="text-4xl text-orange-500 font-extrabold mb-10 tracking-wider drop-shadow-md uppercase"
+        >
+          Depoimentos
+        </h2>
+        <div class="space-y-8 max-w-3xl mx-auto">
+          <blockquote class="bg-zinc-800 p-6 rounded-xl shadow">
+            <p class="text-gray-300 italic">
+              "Atendimento impecável e ambiente incrível! Melhor barbearia que
+              já fui."
+            </p>
+            <footer class="mt-2 text-orange-500 font-bold">– João Silva</footer>
+          </blockquote>
+          <blockquote class="bg-zinc-800 p-6 rounded-xl shadow">
+            <p class="text-gray-300 italic">
+              "Corte moderno, barbear profissional e ainda saí com um cafezinho.
+              Sensacional!"
+            </p>
+            <footer class="mt-2 text-orange-500 font-bold">
+              – Carlos Mendes
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Localização -->
+      <section id="localizacao" class="text-center">
+        <h2
+          class="text-4xl text-orange-500 font-extrabold mb-6 tracking-wider drop-shadow-md uppercase"
+        >
+          Nossa Localização
+        </h2>
+        <div
+          class="rounded-2xl overflow-hidden shadow-2xl border-4 border-orange-500 max-w-4xl mx-auto"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <button
+          onclick="mostrarCaminho()"
+          class="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition"
+        >
+          Como chegar até aqui
+        </button>
+      </section>
+
+      <!-- Agendamento -->
+      <section id="agendar" class="text-center">
+        <h2
+          class="text-4xl text-orange-500 font-extrabold mb-6 tracking-wider drop-shadow-md uppercase"
+        >
+          Agende seu horário
+        </h2>
+        <p
+          class="text-lg leading-relaxed text-gray-300 max-w-3xl mx-auto mb-10"
+        >
+          Fale com a gente via WhatsApp e marque seu horário com nossos
+          profissionais.
+        </p>
+        <a
+          href="https://api.whatsapp.com/send?phone=5582996836859"
+          target="_blank"
+          rel="noopener"
+          class="inline-block bg-green-600 hover:bg-green-700 text-white px-10 py-4 font-bold rounded-xl shadow-lg uppercase tracking-wider transition"
+        >
+          <i class="fab fa-whatsapp mr-2 text-lg"></i>
+          <span class="px-4"> Falar no WhatsApp</span>
+        </a>
+      </section>
+    </main>
+
+    <footer
+      class="bg-gray-700 text-[#d9c8a8] text-center py-8 px-6 text-sm font-normal tracking-widest font-serif shadow-inner select-none"
+    >
+      <p>&copy; 2025 Barbearia Estilo Fino. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Plugin VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

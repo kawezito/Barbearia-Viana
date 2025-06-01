@@ -1,0 +1,33 @@
+/* Personalização do botão VLibras */
+[vw] [vw-access-button] {
+    bottom: 24px !important;
+    right: 24px !important;
+    background-color: #f97316 !important;
+    /* cor laranja vibrante (tailwind orange-500) */
+    border-radius: 12px !important;
+    width: 60px !important;
+    height: 60px !important;
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+    transition: transform 0.3s ease;
+}
+
+[vw] [vw-access-button]:hover {
+    transform: scale(1.1);
+}
+
+[vw] [vw-access-button] img {
+    filter: invert(1) contrast(1.2);
+    /* deixa o ícone branco e nítido */
+    width: 32px !important;
+    height: 32px !important;
+}
+
+/* Remove destaque azul quando clica */
+[vw] [vw-access-button]:focus {
+    outline: none !important;
+}
+
+/* Reduz z-index do botão para não sobrepor modais, se necessário */
+[vw] {
+    z-index: 999 !important;
+}
